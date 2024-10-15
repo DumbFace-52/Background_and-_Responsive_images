@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  /* width: 1px; */
+  /* height: 1px; */
+  /* overflow: hidden; */
+}
+
+/* End Utility Classes */
+
+body {
+  font-family: 'Caveat', cursive;
+  min-height: 100vh;
+  background-color: aliceblue;
+  background-image: url("../images/bubbles.png"),
+  linear-gradient(to top, dodgerblue, slateblue, rgb(199, 199, 233), rgb(210, 232, 252));
+  background-repeat: repeat-y, no-repeat;
+  background-position: right, center;
+  background-size: 10%, auto;
+  background: repeat-y right center url("../images/bubbles.png"), no-repeat linear-gradient();
+}
+
+.container {
+  background-color: rgb(251, 210, 156);
+  background-image: url('../images/map-2176x1451.png');
+  background-repeat: repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.hero {
+  border-bottom: 2px solid darkred;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  background-color: hsla(0, 0%, 0%, 0.35);
+}
+
+.h1 {
+  font-size: 500%;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px #000;
+  /* background-color: hsla(0, 0%, 0%, 0.418);
+  padding: .25rem;
+  border-radius: 10px; */
+}
+
+.profile-pic-figure {
+  width: 35%;
+}
+
+.profile-pic-figure img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 10px double lavender;
+  border-radius: 50%;
+}
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: 2px solid crimson;
+}
+
+.example img {
+  width: 25%;
+  height: auto;
+}
+
+.clip {
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  background-image: url("../images/scenic-2200x1331.png");
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
